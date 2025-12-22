@@ -1,0 +1,5 @@
+{
+  "name": "Culinary Lens AI",
+  "description": "A virtual food photographer for restaurant owners. Upload menus to generate high-end, realistic food photography with customizable styles using Gemini 3 Pro and edit them with Gemini 2.5 Flash.",
+  "requestFramePermissions": []
+}
