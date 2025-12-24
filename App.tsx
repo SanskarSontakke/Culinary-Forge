@@ -98,7 +98,7 @@ const App: React.FC = () => {
               <ChefHat className="w-6 h-6 text-black" />
             </div>
             <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-200">
-              CulinaryLens AI
+              Culinary Forge
             </h1>
           </div>
           <div className="flex items-center gap-4">
