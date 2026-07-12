@@ -1,61 +1,52 @@
 # Culinary Forge
+> Paste a text-based menu and generate images of each dish using AI.
 
-**Culinary Forge** is a "Virtual Food Photographer" application that transforms text-based menus into professional-looking food photography using the power of AI.
+## What it does
 
-## Features
+Takes menu text, extracts dish names and descriptions using Gemini AI, and generates an image for each dish. You can pick from preset photography styles (Rustic/Dark, Bright/Modern, Social Media) or add custom details. Generated images can be edited with AI tools or downloaded as PNG.
 
-- **Menu Analysis**: Paste your text-based menu, and the app uses Gemini AI to automatically extract dish names and descriptions.
-- **AI Image Generation**: Generate high-quality images for each extracted dish.
-- **Style Customization**: Choose from different photography styles (Rustic/Dark, Bright/Modern, Social Media) and add custom prompts to fine-tune the results.
-- **AI Editing**: Edit generated images using AI-powered tools.
-- **Download**: Easily download your generated food photos.
+## Why I built it
 
-## Tech Stack
+Learning project to practice React/TypeScript, work with the Gemini API, and explore AI image generation workflows.
 
-- **Frontend**: React, TypeScript, Vite
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **AI Integration**: Google Gemini API (`@google/genai`)
+## Tech stack
 
-## View in AI Studio
+- React, TypeScript
+- Vite
+- Tailwind CSS, Lucide icons
+- Google Gemini API (`@google/genai`)
 
-View your app in AI Studio: https://ai.studio/apps/drive/11ZpJCqdQ9VSG6aUmX1o7XRbrqpoAMFda
+## Getting started
 
-## Getting Started
+```bash
+git clone https://github.com/SanskarSontakke/Culinary-Forge
+cd Culinary-Forge
+npm install
+```
 
-### Prerequisites
+Create `.env.local` with:
+```
+API_KEY=your_google_gemini_api_key
+```
 
-- Node.js installed on your machine.
-- A Google Gemini API key.
+Then run:
+```bash
+npm run dev
+```
 
-### Installation
+Open the URL shown in the terminal (usually `http://localhost:5173`).
 
-1.  **Install dependencies:**
+## How it works
 
-    ```bash
-    npm install
-    ```
+1. Paste a menu into the text area
+2. Click "Analyze Menu" — Gemini 2.5 Flash extracts dish names and descriptions
+3. Click "Generate Photo" on a dish — Gemini generates an image based on the style and description
+4. Optionally edit the image with AI or download as PNG
 
-2.  **Environment Setup:**
+## Results / status
 
-    Create a `.env.local` file in the root directory and add your Gemini API key:
+Working demo. Text extraction works consistently. Image generation depends on Gemini API quota and content policy.
 
-    ```env
-    GEMINI_API_KEY=your_api_key_here
-    ```
+## License
 
-3.  **Run the application:**
-
-    ```bash
-    npm run dev
-    ```
-
-    Open your browser and navigate to the URL shown in the terminal (usually `http://localhost:5173`).
-
-## Usage
-
-1.  **Paste Menu**: Enter your menu text into the text area.
-2.  **Analyze**: Click "Analyze Menu" to extract dishes.
-3.  **Generate**: Click "Generate Photo" for individual dishes.
-4.  **Customize**: Use the style selector to change the look of the photos.
-5.  **Edit/Download**: Click on a generated image to access editing options or download it.
+MIT © 2026 Sanskar Sontakke
